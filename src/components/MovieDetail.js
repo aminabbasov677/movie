@@ -10,9 +10,8 @@ function MovieDetail() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Get source page and page number from state
+
   const { from, page } = location.state || {};
-  // Fallback: check page parameter in URL
   const searchParams = new URLSearchParams(location.search);
   const urlPage = searchParams.get("page");
 
@@ -40,7 +39,7 @@ function MovieDetail() {
     }
   };
 
-  // Back button navigation
+  
   const handleBack = () => {
     if (from === "/favorites") {
       navigate("/favorites");
