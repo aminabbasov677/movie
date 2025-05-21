@@ -14,7 +14,7 @@ function FavoritesList() {
   const handleSaveAll = () => {
     if (listName.trim() && favorites.length > 0) {
       dispatch(saveAllFavorites(listName));
-      setListName(""); // Clear the input after saving
+      setListName(""); 
     }
   };
 
